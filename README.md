@@ -1,5 +1,5 @@
 ![Contentful App](https://img.shields.io/badge/Contentful-App-blue)
-[![Tests Action Status](https://github.com/yn5/webhook-contentful-app/workflows/Tests/badge.svg)](https://github.com/yn5/webhook-contentful-app/actions)
+[![Tests](https://github.com/prototypsthlm/webhook-contentful-app/actions/workflows/tests.yml/badge.svg)](https://github.com/prototypsthlm/webhook-contentful-app/actions/workflows/tests.yml)
 
 # Webhook Contentful app
 
