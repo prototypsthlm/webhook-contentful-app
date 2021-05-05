@@ -2,6 +2,8 @@ interface Webhook {
   name?: string;
   buttonText?: string;
   webhookUrl?: string;
+  eventType?: string;
+  gitHubAccessToken?: string;
 }
 
 export interface ContentType {

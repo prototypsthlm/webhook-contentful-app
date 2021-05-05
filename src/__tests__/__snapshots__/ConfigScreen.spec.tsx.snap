@@ -207,6 +207,99 @@ exports[`Config When there is a webhook with values Should match snapshot 1`] = 
               <div
                 class="css-10wjke7"
               >
+                <div
+                  class="Card__Card___1_26G Card__Card--padding-default___xgDF9"
+                  data-test-id="cf-ui-card"
+                >
+                  <div
+                    class="css-10wjke7"
+                  >
+                    <h2
+                      class="Subheading__Subheading___2mA9j"
+                      data-test-id="cf-ui-subheading"
+                    >
+                      Trigger GitHub action (optional)
+                    </h2>
+                  </div>
+                  <div
+                    class="css-10wjke7"
+                  >
+                    <p
+                      class="Paragraph__Paragraph___2aO-9"
+                      data-test-id="cf-ui-paragraph"
+                    >
+                      Extra values required when setting up a webhook to trigger a GitHub Action.
+                    </p>
+                  </div>
+                  <div
+                    class="css-10wjke7"
+                  >
+                    <div
+                      class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+                      data-test-id="webhook-event-type-input-0"
+                    >
+                      <div
+                        class="TextField__TextField__label-wrapper___2-MJT"
+                      >
+                        <label
+                          class="FormLabel__FormLabel___3d6zQ"
+                          data-test-id="cf-ui-form-label"
+                          for="eventType"
+                        >
+                          Event Type
+                        </label>
+                      </div>
+                      <div
+                        class="TextInput__TextInput___36-K- TextInput__TextInput--full___1EJEW"
+                      >
+                        <input
+                          aria-label="eventType"
+                          class="TextInput__TextInput__input___27vDB a11y__focus-border--default___60AXp"
+                          data-test-id="cf-ui-text-input"
+                          id="eventType"
+                          name="eventType"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="css-10wjke7"
+                  >
+                    <div
+                      class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+                      data-test-id="webhook-git-hub-access-token-input-0"
+                    >
+                      <div
+                        class="TextField__TextField__label-wrapper___2-MJT"
+                      >
+                        <label
+                          class="FormLabel__FormLabel___3d6zQ"
+                          data-test-id="cf-ui-form-label"
+                          for="gitHubAccessToken"
+                        >
+                          GitHub Personal Access Token
+                        </label>
+                      </div>
+                      <div
+                        class="TextInput__TextInput___36-K- TextInput__TextInput--full___1EJEW"
+                      >
+                        <input
+                          aria-label="gitHubAccessToken"
+                          class="TextInput__TextInput__input___27vDB a11y__focus-border--default___60AXp"
+                          data-test-id="cf-ui-text-input"
+                          id="gitHubAccessToken"
+                          name="gitHubAccessToken"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-10wjke7"
+              >
                 <button
                   class="TextLink__TextLink___1biUr a11y__focus-outline--default___2hwb1 css-7h4q8w TextLink__TextLink--negative___3yhMk"
                   data-test-id="delete-webhook-button-0"
@@ -404,6 +497,99 @@ exports[`Config When there is an empty webhook Should match snapshot 1`] = `
                     >
                       The text that will be shown in the button that triggers the webhook
                     </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-10wjke7"
+              >
+                <div
+                  class="Card__Card___1_26G Card__Card--padding-default___xgDF9"
+                  data-test-id="cf-ui-card"
+                >
+                  <div
+                    class="css-10wjke7"
+                  >
+                    <h2
+                      class="Subheading__Subheading___2mA9j"
+                      data-test-id="cf-ui-subheading"
+                    >
+                      Trigger GitHub action (optional)
+                    </h2>
+                  </div>
+                  <div
+                    class="css-10wjke7"
+                  >
+                    <p
+                      class="Paragraph__Paragraph___2aO-9"
+                      data-test-id="cf-ui-paragraph"
+                    >
+                      Extra values required when setting up a webhook to trigger a GitHub Action.
+                    </p>
+                  </div>
+                  <div
+                    class="css-10wjke7"
+                  >
+                    <div
+                      class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+                      data-test-id="webhook-event-type-input-0"
+                    >
+                      <div
+                        class="TextField__TextField__label-wrapper___2-MJT"
+                      >
+                        <label
+                          class="FormLabel__FormLabel___3d6zQ"
+                          data-test-id="cf-ui-form-label"
+                          for="eventType"
+                        >
+                          Event Type
+                        </label>
+                      </div>
+                      <div
+                        class="TextInput__TextInput___36-K- TextInput__TextInput--full___1EJEW"
+                      >
+                        <input
+                          aria-label="eventType"
+                          class="TextInput__TextInput__input___27vDB a11y__focus-border--default___60AXp"
+                          data-test-id="cf-ui-text-input"
+                          id="eventType"
+                          name="eventType"
+                          value=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="css-10wjke7"
+                  >
+                    <div
+                      class="TextField__TextField___Sf6eo TextField__TextField--full___11DBK"
+                      data-test-id="webhook-git-hub-access-token-input-0"
+                    >
+                      <div
+                        class="TextField__TextField__label-wrapper___2-MJT"
+                      >
+                        <label
+                          class="FormLabel__FormLabel___3d6zQ"
+                          data-test-id="cf-ui-form-label"
+                          for="gitHubAccessToken"
+                        >
+                          GitHub Personal Access Token
+                        </label>
+                      </div>
+                      <div
+                        class="TextInput__TextInput___36-K- TextInput__TextInput--full___1EJEW"
+                      >
+                        <input
+                          aria-label="gitHubAccessToken"
+                          class="TextInput__TextInput__input___27vDB a11y__focus-border--default___60AXp"
+                          data-test-id="cf-ui-text-input"
+                          id="gitHubAccessToken"
+                          name="gitHubAccessToken"
+                          value=""
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

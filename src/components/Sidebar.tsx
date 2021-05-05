@@ -57,7 +57,7 @@ function Sidebar({ sdk }: SidebarProps): React.ReactElement {
   const dropdownItems = webhooks.map(({ name }, index) => ({
     label: name || `Webhook ${index + 1}`,
   }));
-  const { webhookUrl } = webhook;
+  const { webhookUrl, eventType, gitHubAccessToken } = webhook;
 
   async function handleClick() {
     setError(false);
@@ -68,9 +68,22 @@ function Sidebar({ sdk }: SidebarProps): React.ReactElement {
       return;
     }
 
-    const response = await fetch(webhookUrl, {
-      method: 'POST',
-    });
+    const options =
+      eventType && gitHubAccessToken
+        ? {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'application/vnd.github.mercy-preview+json',
+              'USER-AGENT': 'Contentful',
+              Authorization: `Bearer ${gitHubAccessToken}`,
+            },
+            body: JSON.stringify({ event_type: eventType }),
+          }
+        : {
+            method: 'POST',
+          };
+    const response = await fetch(webhookUrl, options);
 
     setLoading(false);
 

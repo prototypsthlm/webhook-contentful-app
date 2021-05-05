@@ -9,6 +9,9 @@ import {
   TextField,
   TextLink,
   Workbench,
+  Card,
+  Subheading,
+  Paragraph,
 } from '@contentful/forma-36-react-components';
 
 import { ContentType, Parameters } from '../lib/types';
@@ -206,6 +209,55 @@ class Config extends Component<ConfigProps, ConfigState> {
                       }}
                       testId={`button-text-input-${index}`}
                     />
+                  </Row>
+                  <Row>
+                    <Card>
+                      <Row>
+                        <Subheading>
+                          Trigger GitHub action (optional)
+                        </Subheading>
+                      </Row>
+                      <Row>
+                        <Paragraph>
+                          Extra values required when setting up a webhook to
+                          trigger a GitHub Action.
+                        </Paragraph>
+                      </Row>
+                      <Row>
+                        <TextField
+                          name="eventType"
+                          id="eventType"
+                          labelText="Event Type"
+                          value={webhook.eventType || ''}
+                          onChange={(event) => {
+                            const target = event.target as HTMLInputElement;
+                            this.setWebhookParameter(
+                              index,
+                              target.name,
+                              target.value
+                            );
+                          }}
+                          testId={`webhook-event-type-input-${index}`}
+                        />
+                      </Row>
+                      <Row>
+                        <TextField
+                          name="gitHubAccessToken"
+                          id="gitHubAccessToken"
+                          labelText="GitHub Personal Access Token"
+                          value={webhook.gitHubAccessToken || ''}
+                          onChange={(event) => {
+                            const target = event.target as HTMLInputElement;
+                            this.setWebhookParameter(
+                              index,
+                              target.name,
+                              target.value
+                            );
+                          }}
+                          testId={`webhook-git-hub-access-token-input-${index}`}
+                        />
+                      </Row>
+                    </Card>
                   </Row>
                   <Row>
                     <StyledTextLink
