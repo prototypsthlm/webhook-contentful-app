@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import tokens from '@contentful/forma-36-tokens';
 import { Button, Note } from '@contentful/forma-36-react-components';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { SidebarExtensionSDK } from 'contentful-ui-extensions-sdk';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Parameters } from '../lib/types';
 import Row from './Row';
 import Select from './Select';

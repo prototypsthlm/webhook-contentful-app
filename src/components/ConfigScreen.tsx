@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from '@emotion/styled';
 import tokens from '@contentful/forma-36-tokens';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { AppExtensionSDK } from 'contentful-ui-extensions-sdk';
 import {
   Button,
@@ -14,6 +15,7 @@ import {
   Paragraph,
 } from '@contentful/forma-36-react-components';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { ContentType, Parameters } from '../lib/types';
 import Row from './Row';
 

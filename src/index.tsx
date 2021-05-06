@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 
 import {
-  AppExtensionSDK,
-  SidebarExtensionSDK,
+  AppExtensionSDK, // eslint-disable-line @typescript-eslint/no-unused-vars
+  SidebarExtensionSDK, // eslint-disable-line @typescript-eslint/no-unused-vars
   init,
   locations,
 } from 'contentful-ui-extensions-sdk';
